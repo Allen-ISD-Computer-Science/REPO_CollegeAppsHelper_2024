@@ -8,3 +8,4 @@ The goal for this project is to design a website that can provide easily accessi
 
 * Product Manager | Connor Church | RusticKnite | https://codermerlin.academy/users/connor-church/Digital%20Portfolio/index.html 
 * Project Manager | Joshua Lee | joshuawlee | https://codermerlin.academy/users/joshua-lee/Digital%20Portfolio/index.html
+* Release Manager | Vijay Vemulapalli | VJCS185 | [Digital Portfolio](https://www.codermerlin.academy/users/vijay-vemulapalli/Digital%20Portfolio/index.html)
