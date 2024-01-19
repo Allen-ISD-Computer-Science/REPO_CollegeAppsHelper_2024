@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#calendar {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#calendar header h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+#calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendar th, #calendar td {
+    border: 1px solid #000;
+    padding: 10px;
+    width: 14.28%; /* 100% divided by 7 days */
+    height: 50px;
+}
+
+#calendar th {
+    background-color: #EEE;
+    font-weight: bold;
+}
+
+#calendar td {
+    background-color: #FFF;
+}
+
+#calendar td:nth-of-type(7n+1) {
+    color: red; /* Highlight Sundays */
+}
+#month-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#month-select button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#month-year {
+    font-size: 24px;
+}
