@@ -4,9 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dynamic Calendar</title>
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="stylesheet" href="calender.css">
 </head>
 <body>
+    <!-- NavBar Section-->
+    <div class="nav">
+        <div class="container">
+            <div class="nav__wrapper">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo2.png" alt="logo" width="200">
+                </a>
+                <nav>
+                    <div class="nav__icon">
+                        <!-- SVG icons here -->
+                    </div>
+                    <div class="nav__bgOverlay"></div>
+                    <ul class="nav__list">
+                        <div class="nav__close">
+                            <!-- SVG icons here -->
+                        </div>
+                        <div class="nav__list__wrapper">
+                            <li><a class="nav__link" href="./home.html">Home</a></li>
+                            <li><a class="nav__link" href="./about.html">About</a></li>
+                            <li><a class="nav__link" href="./calendar.html">Calendar</a></li>
+                            <li><a class="nav__link" href="./contact.html">Contact</a></li>
+                            <li><a href="./scholarships.html" class="btn primary-btn">Scholarships</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End NavBar Section -->
     <div id="calendar">
         <header>
             <div id="month-select">

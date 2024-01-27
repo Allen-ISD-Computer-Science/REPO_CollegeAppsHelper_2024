@@ -3,6 +3,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: #f5fcf4;
 }
 
 #calendar {
@@ -22,19 +23,19 @@ body {
 }
 
 #calendar th, #calendar td {
-    border: 1px solid #000;
-    padding: 10px;
+    border: 2px solid #000;
+    padding: 20px;
     width: 14.28%; /* 100% divided by 7 days */
-    height: 50px;
+    height: 100px;
 }
 
 #calendar th {
-    background-color: #EEE;
+    background-color: #26643b;
     font-weight: bold;
 }
 
 #calendar td {
-    background-color: #FFF;
+    background-color: #d6e5d8;
 }
 
 #calendar td:nth-of-type(7n+1) {
@@ -56,3 +57,40 @@ body {
 #month-year {
     font-size: 24px;
 }
+.container {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+/* Assuming your navigation menu items are in a <ul> with a class of 'menu' */
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* This centers your menu if that's what is desired */
+  }
+  
+  .nav li {
+    display: inline-block;
+  }
+  
+  .nav li a {
+    text-decoration: none;
+    color: black; /* Change this to the color of your non-active menu items */
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  /* This targets the active menu item, you may need to add a class or id to the HTML element */
+  .nav li a.active, .nav li a:hover {
+    background-color: #4CAF50; /* Change this to the desired background color */
+    color: white;
+    border-radius: 5px; /* This gives the button-like rounded corners */
+  }
+  
+  /* Additional styles to remove underline from links on hover if desired */
+  .nav li a:hover {
+    text-decoration: none;
+  }
+  
