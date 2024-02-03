@@ -94,3 +94,56 @@ body {
     text-decoration: none;
   }
   
+.plus-button {
+    position: absolute; 
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: green; 
+    color: white; /* Color of the plus sign */
+    text-align: center;
+    line-height: 20px; 
+    cursor: pointer;
+    display: none; /* Hide by default */
+    border: none;
+    outline: none;
+}
+
+#calendar td:hover .plus-button {
+    display: block; /* Show the button on hover */
+}
+
+#calendar td {
+    position: relative; 
+}
+
+.text-input {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: calc(100% - 10px); 
+    height: calc(100% - 10px); 
+    border: 1px solid #ccc;
+}
+
+.text-input.active {
+    display: block;
+}
+
+.text-content {
+    display: block; /* Stack text blocks */
+    padding: 2px 5px;
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    box-sizing: border-box; 
+    width: 100%;
+    margin-top: 2px; /* Space between text entries */
+}
+
+.day-cell {
+    position: relative; 
+    padding-bottom: 30px; 
+}

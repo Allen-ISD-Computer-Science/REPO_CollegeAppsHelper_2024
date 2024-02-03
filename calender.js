@@ -16,23 +16,72 @@ document.addEventListener('DOMContentLoaded', function() {
     function createCalendar(month, year) {
         var firstDay = new Date(year, month).getDay();
         var days = daysInMonth[month];
-
+    
         var tbody = document.querySelector('#calendar tbody');
         tbody.innerHTML = ''; // Clear previous calendar cells
-
+    
         monthYearDisplay.textContent = months[month] + ' ' + year; // Set the month and year header
-
+    
         var date = 1;
-        for (var i = 0; i < 6; i++) { // Calendar can have a maximum of 6 rows
+        for (var i = 0; i < 6; i++) {
             var tr = document.createElement('tr');
             for (var j = 0; j < 7; j++) {
                 var td = document.createElement('td');
+                td.classList.add('day-cell'); // Added class for cell styling
                 if (i === 0 && j < firstDay) {
                     td.textContent = '';
                 } else if (date > days) {
                     break; // No more days in month
                 } else {
-                    td.textContent = date;
+                    var dateSpan = document.createElement('span');
+                    dateSpan.classList.add('date-number'); // Class for the date number
+                    dateSpan.textContent = date;
+                    td.appendChild(dateSpan);
+
+                    var plusButton = document.createElement('button');
+                    plusButton.classList.add('plus-button');
+                    plusButton.textContent = '+';
+                    td.appendChild(plusButton);
+                    plusButton.style.position = 'absolute';
+                    plusButton.style.top = '8px';
+                    plusButton.style.right = '8px';
+                    plusButton.addEventListener('click', function() {
+                        // Create and show the text input
+                        var input = document.createElement('input');
+                        input.type = 'text';
+                        input.style.position = 'absolute';
+                        input.style.top = '5px';
+                        input.style.left = '5px';
+                        input.style.width = '90%'; 
+                        input.style.height = '20px'; 
+    
+                        // Append the input and hide the plus button
+                        this.parentNode.appendChild(input);
+                        input.focus();
+                        // this.style.display = 'none';
+    
+                    // Event listener for Enter key press
+                    input.addEventListener('keypress', function(e) {
+                        if (e.key === 'Enter') {
+                            e.preventDefault(); 
+                            var textSpan = document.createElement('span');
+                            textSpan.textContent = this.value;
+                            textSpan.classList.add('text-content'); 
+                            
+                            // Insert the new textSpan at the beginning of the parent container
+                            var parentContainer = this.parentNode;
+                            parentContainer.insertBefore(textSpan, parentContainer.firstChild); 
+                    
+                            this.value = ''; // Clear the input field
+                            this.style.display = 'none'; 
+                            plusButton.style.display = 'block'; // Show the plus button again
+
+                        }
+                    });
+                    });
+    
+                    td.appendChild(plusButton);
+    
                     date++;
                 }
                 tr.appendChild(td);
@@ -42,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 break; // All days have been added
             }
         }
-    }
+    }    
 
     prevMonthButton.addEventListener('click', function() {
         if (currentMonth === 0) {
