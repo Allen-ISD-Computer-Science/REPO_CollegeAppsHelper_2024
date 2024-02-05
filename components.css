@@ -7,6 +7,10 @@
 .nav__bgOverlay {
 	display: none;
 }
+.nav__logo {
+	width: 75px;
+	margin-bottom: 2rem;
+}
 .nav__wrapper {
 	display: flex;
 	justify-content: space-between;

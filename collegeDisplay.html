@@ -5,25 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./images/" type="image/x-icon">
-  <title>College Apps Helper</title>
+  <link rel="shortcut icon" href="./images/logo2.png" type="image/x-icon">
+  <title>About | College Helper</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./globalStyles.css">
   <link rel="stylesheet" href="./components.css">
   <!-- aos library css  -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Add your custom css -->
-  <link rel="stylesheet" href="./home.css">
+  <link rel="stylesheet" href="./about.css">
 </head>
 
 <body>
-  <!-- NavBar Section -->
+  <!-- Nav Section -->
   <div class="nav">
     <div class="container">
       <div class="nav__wrapper">
         <div class="nav__logo">
         <a href="./home.html" class="logo">
-          <img src="./images/logo2.png" alt="logo">
+          <img src="./images/logo2.png" alt="logo2">
         </a>
         </div>
         <nav>
@@ -37,7 +36,7 @@
             </svg>
           </div>
           <div class="nav__bgOverlay"></div>
-          <ul class="nav__list">
+          <ol class="nav__list">
             <div class="nav__close">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -54,38 +53,37 @@
               <li><a class="nav__link" href="./contact.html">Contact</a></li>
               <li><a href="./scholarships.html" class="btn primary-btn">Scholarships</a></li>
             </div>
-          </ul>
+          </ol>
         </nav>
       </div>
     </div>
   </div>
-  <!-- End NavBar Section -->
-  <!-- Hero Section -->
-  <section id="hero">
+  <!-- End Nav Section -->
+  <!-- Our Story Section -->
+  <section id="ourStory" data-aos="fade-up">
     <div class="container">
-      <div class="hero__wrapper">
-        <div class="hero__left" data-aos="fade-left">
-          <div class="hero__left__wrapper">
+      <div class="ourStory__wrapper">
 
-            <h1 class="hero__heading">College Made Easy</h1>
-            <p class="hero__info">
-              This website serves to help students around the world through the complex college application process.
-            </p>
-            <div class="button__wrapper">
-              <a href="./colleges.html" class="btn primary-btn">Explore Colleges</a>
-              <a href="./scholarships.html" class="btn">Explore Scholarships</a>
-            </div>
-          </div>
+        <div class="ourStory__img">
+          <img src="./images/Stanford-University-Logo.png" alt="insert image here">
         </div>
-        <div class="hero__right" data-aos="fade-right">
-          <div class="hero__imgWrapper">
-            <img src="./images/logo.png">
-          </div>
+        <div class="ourStory__info">
+          <h3 class="ourStory__title">
+            About (Insert College)
+          </h3>
+          <p class="ourStory__subtitle">
+            (Insert college) is located in (insert location) and is a (public/private) college.
+          </p>
+          <p class="ourStory__text">
+            (Insert College) is a prestigous university that is known for (insert majors/sports/etc), and is ranked (insert significant ranking). 
+            <br><br>
+            (Insert personalized reason why the college could or could not be a good fit for user)
+          </p>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Hero Section -->
+  <!-- End Our Story Section -->
   <!-- Services Info Section -->
   <section id="storeInfo" data-aos="fade-up">
     <div class="container">
@@ -95,10 +93,10 @@
             <img src="" alt="college">
           </div>
           <h3 class="storeInfo__title">
-            College Help
+            College Location
           </h3>
           <p class="storeInfo__text">
-            Essays, Tuition, Deadlines, & More!
+            (insert college location & fun fact)
           </p>
         </div>
         <div class="storeInfo__item">
@@ -106,10 +104,10 @@
             <img src="" alt="Sccholarships">
           </div>
           <h3 class="storeInfo__title">
-            Scholarship Help
+            Tuition Cost
           </h3>
           <p class="storeInfo__text">
-            Essays, $ Amount, Deadlines, & More!
+            (insert tuition cost, room & board, etc)
           </p>
         </div>
         <div class="storeInfo__item">
@@ -117,157 +115,43 @@
             <img src="" alt="Calendar">
           </div>
           <h3 class="storeInfo__title">
-            Calendar
+            Ranking
           </h3>
           <p class="storeInfo__text">
-            Organized Deadlines & Reminders
+            (insert significant ranking for college)
           </p>
         </div>
       </div>
     </div>
   </section>
   <!-- End Store Info Section -->
-  <!-- Our Specials Section -->
-  <section id="ourSpecials" data-aos="fade-up">
+  <!-- Our Goals -->
+  <section id="ourGoals" data-aos="fade-down">
     <div class="container">
-      <div class="ourSpecials__wrapper">
-        <div class="ourSpecials__left">
-          <div class="ourSpecials__item">
-            <div class="ourSpecials__item__img">
-              <img src="" alt="customer1">
-            </div>
-            <h2 class="ourSpecials__item__title">
-              John Doe
-            </h2>
-            <h3 class="ourSpecials__item__price">
-              Class of 2028
-            </h3>
-            <div class="ourSpecials__item__stars">
-              <img src="" alt="5 stars">
-            </div>
-            <p class="ourSpecials__item__text">
-              This website has been a life saver for me! I was very lost on how to even approach the college application process but with the help of this website I was able to easily apply to many colleges. The website provided me with a clear pathway to success and I am very grateful for it.
-            </p>
-          </div>
-          <div class="ourSpecials__item">
-            <div class="ourSpecials__item__img">
-              <img src="" alt="customer2">
-            </div>
-            <h2 class="ourSpecials__item__title">
-              Jane Doe
-            </h2>
-            <h3 class="ourSpecials__item__price">
-              Class of 2000
-            </h3>
-            <div class="ourSpecials__item__stars">
-              <img src="" alt="5 stars">
-            </div>
-            <p class="ourSpecials__item__text">
-              This website is timeless! It has helped me with so many uncertainties I had and allowed me to easily navigate the application process. Additionally, the scholarships feature has allowed me to attend college for free! Thank you so much College Apps Helper!
-            </p>
-          </div>
-        </div>
-        <!--
-        <div class="ourSpecials__right">
-          <h2 class="ourSpecials__title">
-            Our Specials
-          </h2>
-          <p class="ourSpecials__text">
-            All of our food is prepared daily at our restaurants to ensure the highest quality, freshest meals are
-            delivered to our customers
-          </p>
-          <a href="./booking.html" class="btn primary-btn">Book Table</a>
-        </div> -->
+      <div class="ourGoals__info">
+        <h3 class="ourGoals__title">
+          College Preview
+        </h3>
+        <p class="ourGoals__text">
+          This is (insert college name)
+        </p>
       </div>
-    </div>
-  </section>
-  <!-- End Our Specials Section -->
-  <!-- Top Dishes -->
-  <section id="dishGrid" data-aos="fade-up">
-    <div class="container">
-      <h2 class="dishGrid__title">
-        Recommended Colleges
-      </h2>
-      <div class="dishGrid__wrapper">
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="" alt="college">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              University of Texas at Austin
-            </h3>
-            <h3 class="dishGrid__item__price">tuition here</h3>
-            <div class="dishGrid__item__stars">
-              <img src="" alt="5 star">
-            </div>
-          </div>
+      <div class="ourGoals__imgs__wrapper" data-aos="fade-up">
+        <div class="ourGoals__img1">
+          <img src="./images/stanfordVB.jpg" alt="goal img1">
         </div>
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="" alt="college">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              University of Texas at Dallas
-            </h3>
-            <h3 class="dishGrid__item__price">tuition here</h3>
-            <div class="dishGrid__item__stars">
-              <img src="" alt="3 star">
-            </div>
-          </div>
+        <div class="ourGoals__img2">
+          <img src="./images/stanfordCampus.png" alt="goal img2">
         </div>
-        <div class="dishGrid__item">
-          <div class="dishGrid__item__img">
-            <img src="" alt="college">
-          </div>
-          <div class="dishGrid__item__info">
-            <h3 class="dishGrid__item__title">
-              Texas A&M
-            </h3>
-            <h3 class="dishGrid__item__price">tuition here</h3>
-            <div class="dishGrid__item__stars">
-              <img src="" alt="4 star">
-            </div>
-          </div>
+        <div class="ourGoals__img3">
+          <img src="./images/Stanford_Stadium.jpeg" alt="goal img3">
         </div>
       </div>
     </div>
   </section>
-  <!-- End Top Dishes -->
-  <!-- Featured College of the Day Section -->
-  <section id="discount" data-aos="fade-up">
-    <div class="container">
-      <div class="discount__wrapper">
-        <div class="discount__images">
-          <div class="discount__img1">
-            <img src="" alt="college">
-          </div>
-          <div class="discount__img2">
-            <img src="" alt="college">
-          </div>
-          <div class="discount__img3">
-            <img src="" alt="college">
-          </div>
-        </div>
-        <div class="discount__info">
-          <h3 class="discount__text">#1 Business School</h3>
-          <h3 class="discount__title">UChicago</h3>
-          <h3 class="discount__price">
-            <span class="discount__oldPrice">tuition</span>
-            <span class="discount__newPrice">here</span>
-          </h3>
-          <div class="discount__stars">
-            <img src="" alt="5 stars">
-          </div>
-          <a class="btn primary-btn" href="./booking.html">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Discount Section -->  
-  <!-- Footer -->
-  <footer>
+  <!-- End Our Goals -->
+<!-- Footer -->
+<footer>
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__col1">
@@ -389,9 +273,9 @@
   </div>
   <!-- End Footer -->
 
-  <!-- aos script -->
+  <!-- aos scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <!-- custom script -->
+  <!-- custom scripts -->
   <script src="./main.js"></script>
 </body>
 
