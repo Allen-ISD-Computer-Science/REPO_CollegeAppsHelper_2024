@@ -16,16 +16,19 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <link rel="stylesheet" href="./home.css">
-  <link rel="stylesheet" href="./college.csss">
+  <link rel="stylesheet" href="./college.css">
+  <link rel="stylesheet" href="./search.css">
 </head>
 <body>
     <!-- NavBar (Contents may be changed in the future Note: order of bar was changed might need to be reflected on other pages) -->
     <div class="nav">
       <div class="container">
         <div class="nav__wrapper">
-          <a href="./index.html" class="logo">
-            <img src="" alt="logo">
+          <div class="nav__logo">
+          <a href="./homePage.html" class="logo">
+            <img src="./images/logo2.png" alt="logo">
           </a>
+          </div>
           <nav>
             <div class="nav__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -53,6 +56,11 @@
                 <li><a class="nav__link" href="./calendar.html">Calendar</a></li>
                 <li><a class="nav__link" href="./scholarship.html">Scholarships</a></li>
                 <li><a class="nav__link"  href="./about.html">About Us</a></li>
+                <li> <form>
+                  <label for="search">Search</label>
+                  <input id="search" type="search" placeholder="Search..." pattern=".*\S.*" required>
+                  <span class="caret"></span>
+                </form> </li>
               </div>
             </ul>
           </nav>
@@ -89,29 +97,31 @@
       </div>
     </section>
     <!-- End Home Section -->
-   
+    
+    
     <div class="row">
         <div class="column">
           <div class="card">
-            <img src="/w3images/team1.jpg" alt="College #1" style="width:100%">
+            <img src="./images/Stanford-University-Logo.png" alt="College #1" style="width:100%">
             <div class="container">
-              <h2>College #1</h2>
+              <h2>Stanford University</h2>
               <p class="title">College Information</p>
               <p>YAP YAP YAP</p>
-              <p>STATS</p>
-              <p><button class="button">ADD COLLEGE</button></p>
+              <p>$82,162</p>
+              
+              <p><a href="./collegeDisplay.html" class="button">ADD COLLEGE</a></p>
             </div>
           </div>
         </div>
       
         <div class="column">
           <div class="card">
-            <img src="/w3images/team2.jpg" alt="College #2" style="width:100%">
+            <img src="./images/cmuLogo.png" alt="College #2" class="center" style="width:57%">
             <div class="container">
-                <h2>College #2</h2>
+                <h2>Carnegie Mellon University</h2>
                 <p class="title">College Information</p>
                 <p>YAP YAP YAP</p>
-                <p>STATS</p>
+                <p>$79,850</p>
                 <p><button class="button">ADD COLLEGE</button></p>
             </div>
           </div>
@@ -119,57 +129,18 @@
         
         <div class="column">
           <div class="card">
-            <img src="" alt="College #3" style="width:100%">
+            <img src="./images/mitLogo.png" alt="College #3" class="center" style="width:71%">
             <div class="container">
-                <h2>College #3</h2>
+                <h2>Massachusetts Institute of Technology</h2>
                 <p class="title">College Information</p>
                 <p>YAP YAP YAP</p>
-                <p>STATS</p>
+                <p>$80,230</p>
                 <p><button class="button">ADD COLLEGE</button></p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="/w3images/team1.jpg" alt="College #4" style="width:100%">
-            <div class="container">
-              <h2>College #4/h2>
-              <p class="title">College Information</p>
-              <p>YAP YAP YAP</p>
-              <p>STATS</p>
-              <p><button class="button">ADD COLLEGE</button></p>
-            </div>
-          </div>
-        </div>
       
-        <div class="column">
-          <div class="card">
-            <img src="/w3images/team2.jpg" alt="College #5" style="width:100%">
-            <div class="container">
-                <h2>College #5</h2>
-                <p class="title">College Information</p>
-                <p>YAP YAP YAP</p>
-                <p>STATS</p>
-                <p><button class="button">ADD COLLEGE</button></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            <img src="" alt="College #6" style="width:100%">
-            <div class="container">
-                <h2>College #6</h2>
-                <p class="title">College Information</p>
-                <p>YAP YAP YAP</p>
-                <p>STATS</p>
-                <p><button class="button">ADD COLLEGE</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
        <!-- Featured College of the Day Section -->
   <section id="discount" data-aos="fade-up">
     <div class="container">
