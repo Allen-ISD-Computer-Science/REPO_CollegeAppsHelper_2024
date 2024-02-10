@@ -147,3 +147,43 @@ body {
     position: relative; 
     padding-bottom: 30px; 
 }
+.date-number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    margin: 0;
+    padding: 0;
+}
+.text-content {
+    display: inline-block; /* Allows the bubble to wrap around the text */
+    padding: 5px 10px; 
+    background-color: #e7f5e7; /* bubble color */
+    border-radius: 10px; /* rounded bubble corners */
+    margin: 2px; /* Space between text bubbles */
+    border: 1px solid #c3dec3; /* Light green bubble border */
+    box-sizing: border-box; 
+    max-width: calc(100% - 20px); /* Prevents the bubble from being too wide */
+    overflow: hidden; /* Makes sure content does not overflow */
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    position: relative; 
+}
+.delete-text {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 15%;
+    right: 0;
+    background-color: #ff5c5c; /* Red background for the delete button */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Circle shape */
+    padding: 0 5px;
+    cursor: pointer;
+    line-height: normal;
+    font-size: 12px;
+    height: 18px;
+    width: 18px;
+}
+.text-content:hover .delete-text {
+    display: block; /* Show on hover */
+}

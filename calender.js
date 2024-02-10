@@ -67,6 +67,17 @@ document.addEventListener('DOMContentLoaded', function() {
                             var textSpan = document.createElement('span');
                             textSpan.textContent = this.value;
                             textSpan.classList.add('text-content'); 
+
+
+                            var deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'X';
+                            deleteButton.classList.add('delete-text');
+                            deleteButton.onclick = function() {
+                                this.parentNode.remove();
+                            };
+
+                            textSpan.textContent = this.value;
+                            textSpan.appendChild(deleteButton);
                             
                             // Insert the new textSpan at the beginning of the parent container
                             var parentContainer = this.parentNode;
