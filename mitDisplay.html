@@ -5,25 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./images/" type="image/x-icon">
-  <title>My Colleges | College Helper</title>
+  <link rel="shortcut icon" href="./images/logo2.png" type="image/x-icon">
+  <title>MIT | College Helper</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./globalStyles.css">
   <link rel="stylesheet" href="./components.css">
   <!-- aos library css  -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Add your custom css -->
-  <link rel="stylesheet" href="./home.css">
+  <link rel="stylesheet" href="./about.css">
 </head>
 
 <body>
-  <!-- NavBar Section -->
+  <!-- Nav Section -->
   <div class="nav">
     <div class="container">
       <div class="nav__wrapper">
         <div class="nav__logo">
         <a href="./home.html" class="logo">
-          <img src="./images/logo2.png" alt="logo">
+          <img src="./images/logo2.png" alt="logo2">
         </a>
         </div>
         <nav>
@@ -37,7 +36,7 @@
             </svg>
           </div>
           <div class="nav__bgOverlay"></div>
-          <ul class="nav__list">
+          <ol class="nav__list">
             <div class="nav__close">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -56,116 +55,109 @@
                 <li><a class="nav__link" href="./contact.html">Contact</a></li>
                 <li><a href="./logIn.html" class="btn primary-btn">Log In</a></li>
             </div>
-          </ul>
+          </ol>
         </nav>
       </div>
     </div>
   </div>
-  <!-- End NavBar Section -->
-  <!-- Hero Section -->
-  <section id="hero">
+  <!-- End Nav Section -->
+  <!-- Our Story Section -->
+  <section id="ourStory" data-aos="fade-up">
     <div class="container">
-      <div class="hero__wrapper">
-        <div class="hero__left" data-aos="fade-left">
-          <div class="hero__left__wrapper">
+      <div class="ourStory__wrapper">
 
-            <h1 class="hero__heading">My Colleges</h1>
-            <p class="hero__info">
-              These are colleges you have favorited! Prices that are marked off are costs before aid and the green
-              prices are the costs after aid.
-            </p>
-          </div>
+        <div class="ourStory__img">
+          <img src="./images/mitLogo.png" alt="insert image here">
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section -->
-  <!-- College Display Section -->
-  <section id="discount" data-aos="fade-up">
-    <div class="container">
-      <div class="discount__wrapper">
-        <div class="discount__images">
-          <div class="discount__img1">
-            <img src="./images/Stanford-University-Logo.png" alt="college">
-          </div>
-          <div class="discount__img2">
-            <img src="./images/stanfordCampus.png" alt="college">
-          </div>
-          <div class="discount__img3">
-            <img src="./images/Stanford_Stadium.jpeg" alt="college">
-          </div>
-        </div>
-        <div class="discount__info">
-          <h3 class="discount__text">#2 Computer Science</h3>
-          <h3 class="discount__title">Stanford University</h3>
-          <h3 class="discount__price">
-            <span class="discount__oldPrice">$82,162</span>
-            <span class="discount__newPrice">$7,200</span>
+        <div class="ourStory__info">
+          <h3 class="ourStory__title">
+            About Massachusetts Institute of Technology (MIT)
           </h3>
-          <a class="btn primary-btn" href="./stanfordDisplay.html">Learn More</a>
+          <p class="ourStory__subtitle">
+            MIT is located in Cambridge, Massachusetts and is a private univeristy.
+          </p>
+          <p class="ourStory__text">
+            MIT is a prestigous university that is known for their overall prestige. They are the 
+            #2 ranked University nationally, are ranked #1 for best undergraduate engineering schools, #2 for 
+            business programs, and #1 for computer science. 
+            <br><br>
+            MIT is a great reach school for you! Based off your interests in business and computer science, 
+            this school can provide you with one of the best opportunities for both fields. Try to improve your GPA 
+            and attempt to score higher on the SAT to have a better chance at this highly competitive university. 
+          </p>
         </div>
       </div>
     </div>
   </section>
-  <!-- End College Display Section -->  
-  <!-- College Display Section -->
-  <section id="discount" data-aos="fade-up">
+  <!-- End Our Story Section -->
+  <!-- Services Info Section -->
+  <section id="storeInfo" data-aos="fade-up">
     <div class="container">
-      <div class="discount__wrapper">
-        <div class="discount__images">
-          <div class="discount__img1">
-            <img src="./images/mitLogo.png" alt="college">
+      <div class="storeInfo__wrapper">
+        <div class="storeInfo__item">
+          <div class="storeInfo__icon">
+            <img src="" alt="college">
           </div>
-          <div class="discount__img2">
-            <img src="./images/mitCampus.jpeg" alt="college">
-          </div>
-          <div class="discount__img3">
-            <img src="./images/mitLife.jpeg" alt="college">
-          </div>
-        </div>
-        <div class="discount__info">
-          <h3 class="discount__text">#1 Computer Science</h3>
-          <h3 class="discount__title">Massachusetts Institute of Technology</h3>
-          <h3 class="discount__price">
-            <span class="discount__oldPrice">$79,850</span>
-            <span class="discount__newPrice">$5,084</span>
+          <h3 class="storeInfo__title">
+            College Location
           </h3>
-          <a class="btn primary-btn" href="./mitDisplay.html">Learn More</a>
+          <p class="storeInfo__text">
+            Cambridge, Massachusetts
+          </p>
+        </div>
+        <div class="storeInfo__item">
+          <div class="storeInfo__icon">
+            <img src="" alt="Sccholarships">
+          </div>
+          <h3 class="storeInfo__title">
+            Tuition Cost
+          </h3>
+          <p class="storeInfo__text">
+            $57,986 (before aid)
+          </p>
+        </div>
+        <div class="storeInfo__item">
+          <div class="storeInfo__icon">
+            <img src="" alt="Calendar">
+          </div>
+          <h3 class="storeInfo__title">
+            Ranking
+          </h3>
+          <p class="storeInfo__text">
+            #2 National University
+          </p>
         </div>
       </div>
     </div>
   </section>
-  <!-- End College Display Section -->  
-  <!-- College Display Section -->
-  <section id="discount" data-aos="fade-up">
+  <!-- End Services Info Section -->
+  <!-- Our Goals -->
+  <section id="ourGoals" data-aos="fade-down">
     <div class="container">
-      <div class="discount__wrapper">
-        <div class="discount__images">
-          <div class="discount__img1">
-            <img src="./images/cmuLogo.png" alt="college">
-          </div>
-          <div class="discount__img2">
-            <img src="./images/cmuCampus.jpeg" alt="college">
-          </div>
-          <div class="discount__img3">
-            <img src="./images/cmuLife.webp" alt="college">
-          </div>
+      <div class="ourGoals__info">
+        <h3 class="ourGoals__title">
+          College Preview
+        </h3>
+        <p class="ourGoals__text">
+          This is MIT
+        </p>
+      </div>
+      <div class="ourGoals__imgs__wrapper" data-aos="fade-up">
+        <div class="ourGoals__img1">
+          <img src="./images/mitSports.jpeg" alt="goal img1">
         </div>
-        <div class="discount__info">
-          <h3 class="discount__text">#2 Computer Science</h3>
-          <h3 class="discount__title">Carnegie Mellon University</h3>
-          <h3 class="discount__price">
-            <span class="discount__oldPrice">$80,230</span>
-            <span class="discount__newPrice">$37,846</span>
-          </h3>
-          <a class="btn primary-btn" href="./cmuDisplay.html">Learn More</a>
+        <div class="ourGoals__img2">
+          <img src="./images/mitCampus2.jpeg" alt="goal img2">
+        </div>
+        <div class="ourGoals__img3">
+          <img src="./images/mitResearch.jpeg" alt="goal img3">
         </div>
       </div>
     </div>
   </section>
-  <!-- End College Display Section -->  
-  <!-- Footer -->
-  <footer>
+  <!-- End Our Goals -->
+<!-- Footer -->
+<footer>
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__col1">
@@ -287,9 +279,9 @@
   </div>
   <!-- End Footer -->
 
-  <!-- aos script -->
+  <!-- aos scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <!-- custom script -->
+  <!-- custom scripts -->
   <script src="./main.js"></script>
 </body>
 
