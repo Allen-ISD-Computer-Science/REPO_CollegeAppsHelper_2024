@@ -56,10 +56,10 @@
                 <li><a class="nav__link" href="./calendar.html">Calendar</a></li>
                 <li><a class="nav__link" href="./scholarship.html">Scholarships</a></li>
                 <li><a class="nav__link"  href="./about.html">About Us</a></li>
-                <li> <form>
-                  <label for="search">Search</label>
-                  <input id="search" type="search" placeholder="Search..." pattern=".*\S.*" required>
-                  <span class="caret"></span>
+                <li> <form onsubmit="event.preventDefault();" role="search">
+                  <label for="search">Search for stuff</label>
+                  <input id="search" type="search" placeholder="Search..." autofocus required />
+                  <button type="submit">Go</button>    
                 </form> </li>
               </div>
             </ul>
@@ -103,13 +103,11 @@
         <div class="column">
           <div class="card">
             <img src="./images/Stanford-University-Logo.png" alt="College #1" style="width:100%">
-            <div class="container">
-              <h2>Stanford University</h2>
-              <p class="title">College Information</p>
-              <p>YAP YAP YAP</p>
-              <p>$82,162</p>
+            <div class="container1">
               
-              <p><a href="./collegeDisplay.html" class="button">ADD COLLEGE</a></p>
+              
+              
+              <p><a href="./stanfordDisplay.html" class="button">ADD COLLEGE</a></p>
             </div>
           </div>
         </div>
@@ -117,12 +115,10 @@
         <div class="column">
           <div class="card">
             <img src="./images/cmuLogo.png" alt="College #2" class="center" style="width:57%">
-            <div class="container">
-                <h2>Carnegie Mellon University</h2>
-                <p class="title">College Information</p>
-                <p>YAP YAP YAP</p>
-                <p>$79,850</p>
-                <p><button class="button">ADD COLLEGE</button></p>
+            <div class="container1">
+                
+                
+              <p><a href="./cmuDisplay.html" class="button">ADD COLLEGE</a></p>
             </div>
           </div>
         </div>
@@ -130,12 +126,10 @@
         <div class="column">
           <div class="card">
             <img src="./images/mitLogo.png" alt="College #3" class="center" style="width:71%">
-            <div class="container">
-                <h2>Massachusetts Institute of Technology</h2>
-                <p class="title">College Information</p>
-                <p>YAP YAP YAP</p>
-                <p>$80,230</p>
-                <p><button class="button">ADD COLLEGE</button></p>
+            <div class="container1">
+                
+               
+              <p><a href="./mitDisplay.html" class="button">ADD COLLEGE</a></p>
             </div>
           </div>
         </div>

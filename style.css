@@ -105,7 +105,12 @@ html {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #e5e1ca;
   margin: 8px;
+  height: 100%; /* Ensure all cards have the same height */
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
 }
 
 .about-section {
@@ -113,13 +118,19 @@ html {
   text-align: center;
   background-color: #474e5d;
   color: white;
-}
+} 
 
-.container {
+.container1 {
   padding: 0 16px;
+  flex-direction: column;
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  justify-content: center; /* Center the flex items horizontally */
+  margin-bottom: 5px;
+  
 }
 
-.container::after, .row::after {
+.container1::after, .row::after {
   content: "";
   clear: both;
   display: table;
