@@ -63,36 +63,36 @@ body {
 	margin: 0 auto;
 }
 /* Assuming your navigation menu items are in a <ul> with a class of 'menu' */
-.nav {
+/* .nav {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* This centers your menu if that's what is desired */
+    justify-content: center; /* This centers your menu if that's what is desired 
   }
-  
-  .nav li {
+   */
+  /* .nav li {
     display: inline-block;
-  }
+  } */
   
-  .nav li a {
+  /* .nav li a {
     text-decoration: none;
-    color: black; /* Change this to the color of your non-active menu items */
+    color: black; /* Change this to the color of your non-active menu items 
     padding: 10px 15px;
     display: block;
-  }
+  } */
   
   /* This targets the active menu item, you may need to add a class or id to the HTML element */
-  .nav li a.active, .nav li a:hover {
-    background-color: #4CAF50; /* Change this to the desired background color */
+  /* .nav li a.active, .nav li a:hover {
+    background-color: #4CAF50; /* Change this to the desired background color
     color: white;
-    border-radius: 5px; /* This gives the button-like rounded corners */
-  }
+    border-radius: 5px; /* This gives the button-like rounded corners 
+  } */
   
   /* Additional styles to remove underline from links on hover if desired */
-  .nav li a:hover {
+  /* .nav li a:hover {
     text-decoration: none;
-  }
+  } */
   
 .plus-button {
     position: absolute; 
