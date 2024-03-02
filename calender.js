@@ -88,6 +88,37 @@ document.addEventListener('DOMContentLoaded', function() {
                             plusButton.style.display = 'block'; // Show the plus button again
 
                         }
+                            //INITIAL TASKS FOR MVP
+                            // Predefined tasks for the first three days
+                            const initialTasks = {
+                                1: "Finish UT Why Us Essay",
+                                2: "Start outlining A&M Essays",
+                                3: "Finish 2 A&M Essays"
+                            };
+
+                            // Check if the date is 1, 2, or 3, and add the initial task
+                            if (date in initialTasks) {
+                                // Create the span for the task text
+                                var taskSpan = document.createElement('span');
+                                taskSpan.textContent = initialTasks[date];
+                                taskSpan.classList.add('task-text'); // Add a class for styling the task text
+
+                                // Optionally, you can create a delete button for the task
+                                var deleteTaskButton = document.createElement('button');
+                                deleteTaskButton.textContent = 'X';
+                                deleteTaskButton.classList.add('delete-task');
+                                deleteTaskButton.onclick = function() {
+                                    this.parentNode.remove();
+                                };
+
+                                // Append the delete button to the task span
+                                taskSpan.appendChild(deleteTaskButton);
+
+                                // Insert the task at the beginning of the cell
+                                td.insertBefore(taskSpan, td.firstChild);
+                            }
+                                //INITIAL TASKS FOR MVP
+
                     });
                     });
     
