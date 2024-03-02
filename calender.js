@@ -33,10 +33,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else if (date > days) {
                     break; // No more days in month
                 } else {
+
+                    //Manual Task Fill
                     var dateSpan = document.createElement('span');
                     dateSpan.classList.add('date-number'); // Class for the date number
                     dateSpan.textContent = date;
                     td.appendChild(dateSpan);
+    
+                    if (date === 1) {
+                        // Automatically add tasks for the first day
+                        addTask(td, "Complete UT Why US Essay");
+                        addTask(td, "Outline Purdue Essays");
+                    }
+
+                    var dateSpan = document.createElement('span');
+                    dateSpan.classList.add('date-number'); // Class for the date number
+                    dateSpan.textContent = date;
+                    td.appendChild(dateSpan);
+
+                    // Manual Task Fill
 
                     var plusButton = document.createElement('button');
                     plusButton.classList.add('plus-button');
@@ -88,36 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             plusButton.style.display = 'block'; // Show the plus button again
 
                         }
-                            //INITIAL TASKS FOR MVP
-                            // Predefined tasks for the first three days
-                            const initialTasks = {
-                                1: "Finish UT Why Us Essay",
-                                2: "Start outlining A&M Essays",
-                                3: "Finish 2 A&M Essays"
-                            };
-
-                            // Check if the date is 1, 2, or 3, and add the initial task
-                            if (date in initialTasks) {
-                                // Create the span for the task text
-                                var taskSpan = document.createElement('span');
-                                taskSpan.textContent = initialTasks[date];
-                                taskSpan.classList.add('task-text'); // Add a class for styling the task text
-
-                                // Optionally, you can create a delete button for the task
-                                var deleteTaskButton = document.createElement('button');
-                                deleteTaskButton.textContent = 'X';
-                                deleteTaskButton.classList.add('delete-task');
-                                deleteTaskButton.onclick = function() {
-                                    this.parentNode.remove();
-                                };
-
-                                // Append the delete button to the task span
-                                taskSpan.appendChild(deleteTaskButton);
-
-                                // Insert the task at the beginning of the cell
-                                td.insertBefore(taskSpan, td.firstChild);
-                            }
-                                //INITIAL TASKS FOR MVP
 
                     });
                     });
@@ -134,6 +119,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }    
+
+    // Manual Task Fill
+    function addTask(td, taskText) {
+        var textSpan = document.createElement('span');
+        textSpan.textContent = taskText;
+        textSpan.classList.add('text-content');
+    
+        var deleteButton = document.createElement('button');
+        deleteButton.textContent = 'X';
+        deleteButton.classList.add('delete-text');
+        deleteButton.onclick = function() {
+            this.parentNode.remove();
+        };
+    
+        textSpan.appendChild(deleteButton);
+    
+        // Insert the new textSpan at the beginning of the td container
+        td.insertBefore(textSpan, td.firstChild);
+    }
+    // Manual Task Fill
 
     prevMonthButton.addEventListener('click', function() {
         if (currentMonth === 0) {
