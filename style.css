@@ -169,15 +169,15 @@ html {
   width: 50%;
 }
 .button_plus {
-  position: absolute;
+  position: sticky;
   width: 35px;
   height: 35px;
   background: #fff;
   cursor: pointer;
   border: 2px solid #095776;
 
-  /* Mittig */
-  top: 58%;
+  /* Universal height Setting For All Pages */
+  top: 30%;
 
 }
 
