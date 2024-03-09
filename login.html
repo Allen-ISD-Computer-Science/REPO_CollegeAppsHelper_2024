@@ -9,11 +9,11 @@
 <body>
 
 <div class="login-container">
-    <form class="login-form" action="./homepage.html" method="post">
+    <form id="loginForm" class="login-form" action="./homepage.html" method="post">
     <h2>Login</h2>
     <div class="input-group">
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
     </div>
     <div class="input-group">
       <label for="password">Password</label>
@@ -24,8 +24,37 @@
       <label for="remember">Remember me</label>
     </div>
     <button type="submit">Login</button>
+    <p id="error-msg" style="color: red; display: none;">Invalid email or password.</p>
   </form>
 </div>
 
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting
+
+    // Define credentials
+    const accounts = {
+      'vijay.vemulapalli@student.allenisd.org': 'Vijaypassword',
+      'joshua.lee@student.allenisd.org': 'Joshuapassword',
+      'connor.church@student.allenisd.org': 'Connorpassword',
+    };
+
+    // Get user input
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const errorMsg = document.getElementById('error-msg');
+
+    // Check credentials
+    if (accounts[email] && accounts[email] === password) {
+      // If credentials are correct, redirect to homepage
+      window.location.href = './homepage.html';
+    } else {
+      // If credentials are incorrect, show error message
+      errorMsg.style.display = 'block';
+    }
+  });
+</script>
+
 </body>
 </html>
+  
