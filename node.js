@@ -30,6 +30,20 @@ db.run(`INSERT INTO users (name, age, email) VALUES (?, ?, ?)`, ['LDR', 25, 'sha
     }
     console.log('LDR added to the database.');
 });
+//Added these two more entries just for testing and should be removed later. Messing Around With Values and SQL
+db.run(`INSERT INTO users (name, age, email) VALUES (?, INT, ?)`, ['Pikachu1', 30, 'ash@ketchum1.com'], (err) => {
+    if (err) {
+        console.error(err.message);
+    }
+    console.log('Pikachu1 added to the database.');
+});
+
+db.run(`INSERT INTO users (name, age, email) VALUES (STRING, ?, ?)`, ['LDR1', 25, 'shades@ofcool1.com'], (err) => {
+    if (err) {
+        console.error(err.message);
+    }
+    console.log('LDR1 added to the database.');
+});
 
 // Close the database connection 
 db.close((err) => {
